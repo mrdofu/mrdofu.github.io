@@ -63,9 +63,7 @@ body {
     padding: 30px;
 }
 
-    .inner .middle {
-        padding: 0 50px;
-    }
+    
 
 /*header*/
 
@@ -114,7 +112,14 @@ body {
 }
 
 
+/*
+    offset
+*/
 
+.offset {
+    width: 100%;
+    height: 100px;
+}
 
 
 /*
@@ -122,7 +127,7 @@ body {
  */
 
 .cover {
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
     .cover .btn-lg {
@@ -136,7 +141,6 @@ body {
 .jumbotron {
     background-color: darkgray;
     border-radius: 6px;
-    margin-bottom: 60px;
 }
 
 .jumbotron p{
@@ -145,6 +149,19 @@ body {
 
 .jumbotron > p + p{
     margin-left: 100px;
+}
+
+.col-sm-6{
+    position: inherit;
+    padding: 0;
+}
+
+.jumbotron-narrow + .col-sm-6 > div{
+    margin-right: 15px;
+}
+
+.col-sm-6 + .col-sm-6 > div {
+    margin-left: 15px;
 }
 /*
  * Footer
@@ -174,13 +191,13 @@ body {
     
     /* Start the vertical centering */
     .site-wrapper-inner {
-        vertical-align: middle;
+        vertical-align: top;
     }
 
     /* Handle the widths */
     .masthead,
     .mastfoot,
-    .jumbotron,
+    
     .cover-container {
         width: 100%; /* Must be percentage or pixels for horizontal alignment */
     }
