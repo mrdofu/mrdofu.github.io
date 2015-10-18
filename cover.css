@@ -57,10 +57,7 @@ body {
 }
 
 
-/*Padding for spacing*/
-.inner {
-    padding: 30px;
-}
+
 
 
 
@@ -68,6 +65,10 @@ body {
 
 .masthead {
     background-color: #333;
+}
+
+.masthead .inner {
+    padding: 30px;
 }
 
 .masthead-brand {
@@ -149,6 +150,14 @@ body {
         font-weight: bold;
     }
 
+.left .jumbotron {
+    margin-right: 15px;
+}
+
+.right .jumbotron {
+    margin-left: 15px;
+}
+
 /*
     *   jumbotron
     */
@@ -177,13 +186,6 @@ body {
         text-align: left;
     }
 
-    .jumbotron-narrow + .col-sm-6 > div {
-        margin-right: 15px;
-    }
-
-    .col-sm-6 + .col-sm-6 > div {
-        margin-left: 15px;
-    }
 }
 
 @media (min-width: 882px) {
@@ -209,6 +211,9 @@ body {
     border-bottom-color:white;
 }
 
+.jumbotron li {
+    padding-right: 30px;
+}
 /*
  * Footer
  */
