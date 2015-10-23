@@ -26,14 +26,14 @@ a:hover {
 
 html,
 body {
-    height: 200%;
+    height: 150%;
     background-color: #333;
 }
 
 body {
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,1);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.5);
 }
 
 /*vertical and horizontal spacing to look like a table*/
@@ -56,20 +56,15 @@ body {
     margin-left: auto;
 }
 
-
-
-
-
-
 /*header*/
 
 .masthead {
     background-color: #333;
 }
 
-.masthead .inner {
-    padding: 30px;
-}
+    .masthead .inner {
+        padding: 30px;
+    }
 
 .masthead-brand {
     margin-top: 10px;
@@ -150,12 +145,14 @@ body {
         font-weight: bold;
     }
 
-.left .jumbotron {
-    margin-right: 15px;
-}
+@media (min-width: 768px) {
+    .left .jumbotron {
+        margin-right: 15px;
+    }
 
-.right .jumbotron {
-    margin-left: 15px;
+    .right .jumbotron {
+        margin-left: 15px;
+    }
 }
 
 /*
@@ -185,7 +182,6 @@ body {
         padding-right: 40px;
         text-align: left;
     }
-
 }
 
 @media (min-width: 882px) {
@@ -208,7 +204,7 @@ body {
 
 .jumbotron > h3 {
     border-bottom: 2px solid;
-    border-bottom-color:white;
+    border-bottom-color: white;
 }
 
 .jumbotron li {
@@ -221,7 +217,7 @@ body {
 .mastfoot {
     color: #999; /* IE8 proofing */
     color: rgba(255,255,255,1);
-    text-shadow: ;
+    text-shadow: 0 1px 3px rgba(0,0,0,1);
 }
 
 /*
