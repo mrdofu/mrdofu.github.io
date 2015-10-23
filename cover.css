@@ -33,7 +33,7 @@ body {
 body {
     color: #fff;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    text-shadow: 0 1px 3px rgba(0,0,0,1);
 }
 
 /*vertical and horizontal spacing to look like a table*/
@@ -221,6 +221,7 @@ body {
 .mastfoot {
     color: #999; /* IE8 proofing */
     color: rgba(255,255,255,1);
+    text-shadow: ;
 }
 
 /*
