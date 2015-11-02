@@ -28,6 +28,8 @@ html,
 body {
     height: 150%;
     background-color: #333;
+    background-image: url(http://wallpaperspal.com/wp-content/uploads/3D-Polygons-Dark-Pattern-Wallpaper.jpg);
+    background-size: 100%;
 }
 
 body {
@@ -55,6 +57,11 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+
+/*fancy parallax*/
+.parallax {
+}
+
 
 /*header*/
 
@@ -126,8 +133,26 @@ body {
     border-radius: 75px;
 }
 
+.decor-left {
+    height: 150px;
+    width: 150px;
+}
+
+.decor-right {
+    height: 150px;
+    width: 150px;
+}
+
 @media (min-width:768px) {
     .avatar {
+        float: right;
+    }
+
+    .decor-left {
+        float: left;
+    }
+
+    .decor-right {
         float: right;
     }
 }
@@ -219,6 +244,14 @@ body {
     color: rgba(255,255,255,1);
     text-shadow: 0 1px 3px rgba(0,0,0,1);
 }
+
+    .mastfoot .inner {
+        margin: auto 40%;
+        padding-top: 5px;
+        height: 30px;
+        background-color: #333;
+        border-radius: 6px;
+    }
 
 /*
  * Affix and center
