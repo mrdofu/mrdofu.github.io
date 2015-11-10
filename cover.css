@@ -26,10 +26,11 @@ a:hover {
 
 html,
 body {
-    height: 150%;
+    height: 150%;        
     background-color: #333;
     background-image: url(http://wallpaperspal.com/wp-content/uploads/3D-Polygons-Dark-Pattern-Wallpaper.jpg);
     background-size: 100%;
+    background-attachment: fixed;
 }
 
 body {
@@ -56,10 +57,6 @@ body {
 .cover-container {
     margin-right: auto;
     margin-left: auto;
-}
-
-/*fancy parallax*/
-.parallax {
 }
 
 
@@ -103,6 +100,10 @@ body {
         border-bottom-color: rgba(255,255,255,0.25);
     }
 
+    .masthead-brand + img {
+        height: 25px;
+        width: 25px;
+    }
 @media (min-width: 768px) {
     .masthead-brand {
         float: left;
