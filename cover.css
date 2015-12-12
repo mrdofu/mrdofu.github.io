@@ -59,6 +59,14 @@ body {
     margin-left: auto;
 }
 
+.side-margin {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.side-margin .masthead {
+    margin-left:-15%;
+}
 
 /*header*/
 
@@ -239,19 +247,20 @@ body {
     padding-right: 30px;
 }
 
+
+/*carousel*/
 .carousel {
   float: left;
   width: 50%;
 }
 .carousel-inner {
-    padding-left: 10%;
-    position: inherit;
+    margin-left: 10%;
 }
 
-.carousel-indicators {
-    position: relative;
-    margin: 0;
+.carousel-inner img{
+    width:80%;
 }
+
 /*
  * Footer
  */
