@@ -64,9 +64,9 @@ body {
     margin-right: 15%;
 }
 
-.side-margin .masthead {
-    margin-left:-15%;
-}
+    .side-margin .masthead, .side-margin .mastfoot {
+        margin-left: -15%;
+    }
 
 /*header*/
 
@@ -126,7 +126,7 @@ body {
 
 
 /*
-    offset
+    offset to make up for header
 */
 
 .offset {
@@ -250,15 +250,26 @@ body {
 
 /*carousel*/
 .carousel {
-  float: left;
-  width: 50%;
+    float: left;
+    width: 50%;
 }
+
 .carousel-inner {
     margin-left: 10%;
 }
 
-.carousel-inner img{
-    width:80%;
+    .carousel-inner img {
+        width: 80%;
+    }
+
+.carousel + .text-box {
+    text-align:left;
+    float: right;
+    max-width:50%;
+}
+
+.text-box p {
+    margin-right:10%;
 }
 
 /*
