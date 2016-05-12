@@ -26,9 +26,7 @@ a:hover {
 
 html,
 body {
-    height: 150%;
-    background-color: #333;
-    background-image: url(http://wallpaperspal.com/wp-content/uploads/3D-Polygons-Dark-Pattern-Wallpaper.jpg);
+    background-color: #1d0032;
     background-size: 100%;
     background-attachment: fixed;
 }
@@ -67,6 +65,13 @@ body {
     .side-margin .masthead, .side-margin .mastfoot {
         margin-left: -15%;
     }
+
+.wrapper {
+    width:auto;
+    height:100vh;
+    background-image: url(../img/mountains.jpg);
+    background-size:cover;
+}
 
 /*header*/
 
@@ -173,7 +178,7 @@ body {
  */
 
 .cover {
-    padding: 0 30px;
+    padding: 0 15%;
 }
 
     .cover .btn-lg {
@@ -235,6 +240,15 @@ body {
     Content
 */
 
+.github-link{
+        padding:0 5%;
+
+}
+
+.github-logo-container{
+    width:30%;
+}
+
 .jumbotron ul {
     text-align: left;
 }
@@ -256,28 +270,16 @@ body {
     float:right;
 }
 
-/*carousel*/
-.carousel {
-    float: left;
-    width: 50%;
+.main-present {
+    background-color:#000000;
+    overflow:auto;
+    margin-top:5%;
+    margin-left:20%;
+    margin-right:20%;
 }
 
-.carousel-inner {
-    margin-left: 10%;
-}
-
-    .carousel-inner img {
-        width: 80%;
-    }
-
-.carousel + .text-box {
-    text-align:left;
-    float: right;
-    max-width:50%;
-}
-
-.text-box p {
-    margin-right:10%;
+.main-present img {
+    width:100%;
 }
 
 /*
@@ -290,13 +292,6 @@ body {
     text-shadow: 0 1px 3px rgba(0,0,0,1);
 }
 
-    .mastfoot .inner {
-        margin: auto 40%;
-        padding-top: 5px;
-        height: 30px;
-        background-color: #333;
-        border-radius: 6px;
-    }
 
 /*
  * Affix and center
