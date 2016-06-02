@@ -41,19 +41,19 @@
                 <h3 class="masthead-brand"><a href="index.html">Dominic Fung</a></h3>
                 <nav>
                   <ul class="nav masthead-nav">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li class="active"><a href="">About</a></li>
+                    <li><a href="togglePanel()">Projects</a></li>
                     <li><a href="">Contact</a></li>
                   </ul>
                 </nav>
               </div>
             </div>
-            <div class="wrapper" id="fade">
+            <div class="wrapper" id="fade" ng-controller="PanelController">
               <!--offset to make room for header-->
               <div class="offset"></div>
 
               <div class="inner cover">
-                <div class="main-present" ng-controller="PanelController">
+                <div class="main-present">
                   <div class="name-present">
                     <img src="img/name.jpg" alt="Dom Fung" />
                   </div>
@@ -71,26 +71,36 @@
                       </div>
                     </div>
                   </a>
-                  <pageslide ps-open="checked" ps-side="bottom">
-                    <div>
-                      <p>testing</p>
-                    </div>
-                  </pageslide>
                 </div>
               </div>
-            </div>
+              <pageslide ps-open="checked" ps-side="bottom" ps-size="80%" ps-key-listener="true">
+                <div class="sliding-panel">
+                  <div class="panel-header">
+                    <div class="return"></div>
+                    <div class="panel-title">
+                      <h2>PROJECTS</h2>
+                    </div>
+                  </div>
+                  <div class="">
+                   <div class="col-sm-6">
+                     <img src="img/homeMap.png"/>
+                   </div>
+                 </div>
+               </div>
+             </pageslide>
+           </div>
 
-          </div>
-        </div>
+         </div>
+       </div>
 
-      </div>
+     </div>
 
  <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
 -->
 <script src="bower_components/angular/angular.js"></script>
 <script src="bower_components/angular-route/angular-route.js"></script>
-<script src="components/slidingPanel/angular-pageslide-directive.min.js"></script>
+<script src="components/slidingPanel/angular-pageslide-directive.js"></script>
 <script src="components/slidingPanel/panelController.js"></script>
 <script src="app.js"></script>
 </body>

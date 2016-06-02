@@ -1,6 +1,7 @@
 /*
  * Globals
  */
+/* Colours */
 /* Links */
 a,
 a:focus,
@@ -192,6 +193,16 @@ body {
     transition: 0.5s; }
   .main-present a:hover > div {
     background-color: white; }
+
+.ng-pageslide {
+  background-color: #333;
+  margin: 0 5%;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white; }
+
+.sliding-panel {
+  padding: 15px; }
 
 /*
  * Footer
