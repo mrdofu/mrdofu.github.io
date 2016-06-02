@@ -196,13 +196,16 @@ body {
 
 .ng-pageslide {
   background-color: #333;
-  margin: 0 5%;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white; }
+  margin: 0 5%; }
 
 .sliding-panel {
-  padding: 15px; }
+  border-top: 2px solid white;
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+  padding: 15px;
+  overflow: auto; }
+  .sliding-panel img {
+    max-width: 400px; }
 
 /*
  * Footer
