@@ -42,7 +42,7 @@
                 <nav>
                   <ul class="nav masthead-nav">
                     <li class="active"><a href="">About</a></li>
-                    <li><a href="togglePanel()">Projects</a></li>
+                    <li><a href="">Projects</a></li>
                     <li><a href="">Contact</a></li>
                   </ul>
                 </nav>
@@ -74,27 +74,30 @@
                   </a>
                 </div>
               </div>
-              <pageslide ps-open="checked" ps-side="bottom" ps-size="80%" ps-key-listener="true">
+              <pageslide ps-open="checked" ps-side="bottom" ps-size="85%" ps-key-listener="true">
                 <div class="sliding-panel">
-                  <div class="panel-header">
-                  <!-- TODO: add caret button to return to previous screen -->
-                    <div class="return"></div>
-                    <div class="panel-title">
-                      <h2>PROJECTS</h2>
+                  <a href class="return" ng-click="togglePanel()">
+                    <span class="glyphicon glyphicon-chevron-down"></span>
+                  </a>
+                  <div class="content">
+                  <!-- Shit inside content should be generated dynamically -->
+                    <div class="template-header">
+                      <div class="content-container">
+                        <h2>PROJECTS</h2>
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="img/homeMap.png"/>
+                    </div>
+                    <div class="col-sm-6">
+                      <img src="img/dronesafe.png">
                     </div>
                   </div>
-                  <div class="col-sm-6">
-                   <img src="img/homeMap.png"/>
-                 </div>
-                 <div class="col-sm-6">
-                   <img src="img/dronesafe.png">
-                 </div>
-               </div>
-             </pageslide>
-           </div>
-         </div>
-       </div>
-
+                </div>
+              </pageslide>
+            </div>
+          </div>
+        </div>
      </div>
 
  <!-- In production use:

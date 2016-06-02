@@ -122,7 +122,7 @@ angular
                         slider.style.right = attrs.psCustomRight || '0px';
                         break;
                     case 'bottom':
-                        slider.style.width = attrs.psCustomWidth || '90%';
+                        slider.style.width = attrs.psCustomWidth || '94%';
                         slider.style.bottom = attrs.psCustomBottom || '0px';
                         slider.style.left = attrs.psCustomLeft || '0px';
                         slider.style.right = attrs.psCustomRight || '0px';

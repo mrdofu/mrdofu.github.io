@@ -83,7 +83,7 @@ body {
     background-color: $dark-grey;
     z-index: 20;
     .inner {
-        padding: 30px;
+        padding: 10px 30px;
     }
 }
 
@@ -278,23 +278,52 @@ body {
         }
     }
 
+
+    /* Sliding panel */
     .ng-pageslide {
         background-color: $dark-grey;
-        margin: 0 5%;
-    }
-
-    .sliding-panel {
+        margin: 0 3%;
         border-top: 2px solid white;
         border-left: 2px solid white;
         border-right: 2px solid white;
+    }
 
-        padding:15px;
+    .sliding-panel {
+        overflow:auto;
+
+        span.glyphicon-chevron-down {
+            margin-top:30%;
+            font-size: x-large;
+        }
+    }
+
+    .return {
+        position:absolute;
+        left:0;
+        top:0;
+        width:5em;
+        height:5em;
+    }
+
+    .content {
+        padding: 5em 4em;
         overflow:auto;
 
         img {
             max-width: 400px;
         }
     }
+
+    .content-container {
+        margin: 0 8%;
+
+        h2 {
+            padding-top:5px;
+            padding-bottom:5px;
+            border: 2px solid white;
+        }
+    }
+
 
 /*
  * Footer
