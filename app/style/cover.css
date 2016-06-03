@@ -203,7 +203,8 @@ body {
   border-right: 2px solid white; }
 
 .sliding-panel {
-  overflow: auto; }
+  overflow: auto;
+  max-height: 100%; }
   .sliding-panel span.glyphicon-chevron-down {
     margin-top: 30%;
     font-size: x-large; }
@@ -215,6 +216,9 @@ body {
   width: 5em;
   height: 5em; }
 
+.template-header {
+  margin-bottom: 3vw; }
+
 .content {
   padding: 5em 4em;
   overflow: auto; }
@@ -224,8 +228,9 @@ body {
 .content-container {
   margin: 0 8%; }
   .content-container h2 {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 2.1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
     border: 2px solid white; }
 
 /*

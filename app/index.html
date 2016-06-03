@@ -33,7 +33,7 @@
     <body>
       <div class="site-wrapper">
 
-        <div class="site-wrapper-inner">
+        <div class="site-wrapper-inner" ng-controller="PanelController">
 
           <div class="cover-container">
             <div class="masthead clearfix">
@@ -42,13 +42,13 @@
                 <nav>
                   <ul class="nav masthead-nav">
                     <li class="active"><a href="">About</a></li>
-                    <li><a href="">Projects</a></li>
+                    <li><a href="" ng-click="togglePanel()">Projects</a></li>
                     <li><a href="">Contact</a></li>
                   </ul>
                 </nav>
               </div>
             </div>
-            <div class="wrapper" id="fade" ng-controller="PanelController">
+            <div class="wrapper" id="fade" >
               <!--offset to make room for header-->
               <div class="offset"></div>
 
@@ -80,17 +80,20 @@
                     <span class="glyphicon glyphicon-chevron-down"></span>
                   </a>
                   <div class="content">
-                  <!-- Shit inside content should be generated dynamically -->
+                    <!-- Shit inside content should be generated dynamically -->
                     <div class="template-header">
                       <div class="content-container">
                         <h2>PROJECTS</h2>
                       </div>
                     </div>
-                    <div class="col-sm-6">
-                      <img src="img/homeMap.png"/>
-                    </div>
-                    <div class="col-sm-6">
-                      <img src="img/dronesafe.png">
+                    <!-- load template based on active page -->
+                    <div class="content-container">
+                      <div class="col-sm-6">
+                        <img src="img/homeMap.png"/>
+                      </div>
+                      <div class="col-sm-6">
+                        <img src="img/dronesafe.png">
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -98,7 +101,7 @@
             </div>
           </div>
         </div>
-     </div>
+      </div>
 
  <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
