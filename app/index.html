@@ -58,17 +58,17 @@
                     <img src="img/name.jpg" alt="Dom Fung" />
                   </div>
                   <!-- TODO: switch out white images for black on hover-->
-                  <a href="https://github.com/mrdofu">
+                  <a href="https://github.com/mrdofu" ng-init="ghImgSrc='img/github_logo_white.png'" ng-mouseover="ghImgSrc='img/github_logo_black.png'" ng-mouseout="ghImgSrc='img/github_logo_white.png'">
                     <div class="github-link col-sm-6">
                       <div class="github-logo-container">
-                        <img src="img/github_logo_white.png" alt="github logo" />
+                        <img ng-src="{{ghImgSrc}}" alt="github logo" hover-sw-img=""/>
                       </div>
                     </div>                                    
                   </a>
-                  <a href="" ng-click="togglePanel()">
+                  <a href="" ng-click="togglePanel()" ng-init="chImgSrc='img/chest_white.png'" ng-mouseover="chImgSrc='img/chest_black.png'" ng-mouseout="chImgSrc='img/chest_white.png'">
                     <div class="projects-link col-sm-6">
                       <div class="projects-logo-container">
-                        <img src="img/chest_white.png" alt="projects">
+                        <img ng-src="{{chImgSrc}}" alt="projects">
                       </div>
                     </div>
                   </a>
