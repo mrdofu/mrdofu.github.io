@@ -119,36 +119,6 @@ body {
     padding: 10px 20px;
     font-weight: bold; }
 
-@media (min-width: 768px) {
-  .left .jumbotron {
-    margin-right: 15px; }
-
-  .right .jumbotron {
-    margin-left: 15px; } }
-/*
-    *   jumbotron
-    */
-.jumbotron {
-  background-color: darkgray;
-  border-radius: 6px; }
-
-.col-sm-6 {
-  position: inherit;
-  padding: 0; }
-  .col-sm-6 > .jumbotron {
-    padding-top: 5px;
-    padding-bottom: 15px; }
-
-@media (min-width: 768px) {
-  .cover > .jumbotron {
-    padding-left: 40px;
-    padding-right: 40px;
-    text-align: left; } }
-@media (min-width: 882px) {
-  .jumbotron > p + p {
-    margin-left: 100px; }
-  .jumbotron p {
-    display: inline-block; } }
 /*
     Content
     */
@@ -160,16 +130,6 @@ body {
 .github-logo-container, .projects-logo-container {
   margin: 0 35%;
   width: 30%; }
-
-.jumbotron ul {
-  text-align: left; }
-.jumbotron > h3 {
-  border-bottom: 2px solid;
-  border-bottom-color: white; }
-.jumbotron li {
-  padding-right: 30px; }
-.jumbotron .btn-default {
-  float: right; }
 
 .input-group {
   margin-bottom: 20px; }
@@ -234,6 +194,7 @@ body {
     border: 2px solid white; }
 
 .about p {
+  font-size: 1.2rem;
   text-align: left; }
 
 /*
