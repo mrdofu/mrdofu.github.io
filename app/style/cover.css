@@ -233,6 +233,9 @@ body {
     padding-bottom: 15px;
     border: 2px solid white; }
 
+.about p {
+  text-align: left; }
+
 /*
  * Footer
  */

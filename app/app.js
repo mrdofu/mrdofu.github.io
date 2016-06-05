@@ -6,5 +6,5 @@ angular.module('myApp', [
   'pageslide-directive'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-
+	  $routeProvider.otherwise({redirectTo: '/'});
 }]);

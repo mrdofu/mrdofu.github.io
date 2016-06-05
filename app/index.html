@@ -41,9 +41,9 @@
                 <h3 class="masthead-brand"><a href="index.html">Dominic Fung</a></h3>
                 <nav>
                   <ul class="nav masthead-nav">
-                    <li class="active"><a href="">About</a></li>
-                    <li><a href="" ng-click="togglePanel()">Projects</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li class="active"><a href="#/about" ng-click="showPanel()">About</a></li>
+                    <li><a href="#/projects" ng-click="showPanel()">Projects</a></li>
+                    <li><a href="#/contact">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -65,7 +65,7 @@
                       </div>
                     </div>                                    
                   </a>
-                  <a href="" ng-click="togglePanel()" ng-init="chImgSrc='img/chest_white.png'" ng-mouseover="chImgSrc='img/chest_black.png'" ng-mouseout="chImgSrc='img/chest_white.png'">
+                  <a href="#/projects" ng-click="showPanel()" ng-init="chImgSrc='img/chest_white.png'" ng-mouseover="chImgSrc='img/chest_black.png'" ng-mouseout="chImgSrc='img/chest_white.png'">
                     <div class="projects-link col-sm-6">
                       <div class="projects-logo-container">
                         <img ng-src="{{chImgSrc}}" alt="projects">
@@ -74,27 +74,14 @@
                   </a>
                 </div>
               </div>
-              <pageslide ps-open="checked" ps-side="bottom" ps-size="85%" ps-key-listener="true">
+              <pageslide ps-open="checked" ps-side="bottom" ps-size="85%" ps-key-listener="true" ps-click-outside="false">
                 <div class="sliding-panel">
-                  <a href class="return" ng-click="togglePanel()">
+                  <a href="#" class="return" ng-click="hidePanel()">
                     <span class="glyphicon glyphicon-chevron-down"></span>
                   </a>
                   <div class="content">
                     <!-- Shit inside content should be generated dynamically -->
-                    <div class="template-header">
-                      <div class="content-container">
-                        <h2>PROJECTS</h2>
-                      </div>
-                    </div>
-                    <!-- load template based on active page -->
-                    <div class="content-container">
-                      <div class="col-sm-6">
-                        <img src="img/homeMap.png"/>
-                      </div>
-                      <div class="col-sm-6">
-                        <img src="img/dronesafe.png">
-                      </div>
-                    </div>
+                    <ng-view></ng-view>
                   </div>
                 </div>
               </pageslide>
