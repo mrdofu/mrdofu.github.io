@@ -9,6 +9,10 @@ angular.module('pageslide-directive')
 	.when('/about',{
 		templateUrl: 'components/slidingPanel/templates/aboutTemplate.html',
 		controller: 'PanelController'
+	})
+	.when('/contact',{
+		templateUrl: 'components/slidingPanel/templates/contactTemplate.html',
+		controller: 'PanelController'
 	});
 }])
 

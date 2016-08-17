@@ -38,12 +38,12 @@
           <div class="cover-container">
             <div class="masthead clearfix">
               <div class="inner">
-                <h3 class="masthead-brand"><a href="index.html">Dominic Fung</a></h3>
+                <h3 class="masthead-brand"><a href="#" ng-click="hidePanel()">Dominic Fung</a></h3>
                 <nav>
                   <ul class="nav masthead-nav">
                     <li class="active"><a href="#/about" ng-click="showPanel()">About</a></li>
                     <li><a href="#/projects" ng-click="showPanel()">Projects</a></li>
-                    <li><a href="#/contact">Contact</a></li>
+                    <li><a href="#/contact" ng-click="showPanel()">Contact</a></li>
                   </ul>
                 </nav>
               </div>
@@ -57,11 +57,10 @@
                   <div class="name-present">
                     <img src="img/name.jpg" alt="Dom Fung" />
                   </div>
-                  <!-- TODO: switch out white images for black on hover-->
                   <a href="https://github.com/mrdofu" ng-init="ghImgSrc='img/github_logo_white.png'" ng-mouseover="ghImgSrc='img/github_logo_black.png'" ng-mouseout="ghImgSrc='img/github_logo_white.png'">
                     <div class="github-link col-sm-6">
                       <div class="github-logo-container">
-                        <img ng-src="{{ghImgSrc}}" alt="github logo" hover-sw-img=""/>
+                        <img ng-src="{{ghImgSrc}}" alt="github logo"/>
                       </div>
                     </div>                                    
                   </a>
