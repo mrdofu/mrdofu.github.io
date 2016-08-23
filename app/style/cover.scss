@@ -273,11 +273,11 @@ body {
 /*
  * Projects
  */
-figure img{
+ figure img{
     width: 100%;
 }
 
- figure.effect{
+figure.effect{
     position: relative;
     float: left;
     overflow: hidden;
@@ -293,34 +293,112 @@ figure img{
         opacity: 0.8;
     }
 
-    :hover , 
-    :focus  {
-        img{
-            opacity: 0.7;
-            transform: scale(1.05);
-        }
-
-        figcaption{
-            background: rgba(0,0,0,0.4);
-        }
+    figcaption{
+        transition: background .35s ease-in-out;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
 
-    figcaption{
-    transition: background .35s ease-in-out;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    figcaption>a{
+        z-index: 1000;
+        text-indent: 200%;
+        white-space: nowrap;
+        font-size: 0;
+        opacity: 0;
     }
 
     figcaption,
     figcaption>a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    h3,
+    p{
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        margin: 0;
+
+        span {
+            display: block;
+            padding: 0 35px;
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+    }
+
+    h3{
+        top: 0;
+        color: #fff;
+        font-weight: bold;
+        margin: 0;
+        opacity: 0;
+        -webkit-transition: -webkit-transform 0.35s;
+        transition: transform 0.35s;
+        -webkit-transform: translate3d(0, -30px, 0);
+        transform: translate3d(0, -30px, 0);
+
+        span {
+            bottom:0;
+        }
+    }
+
+    p{
+        bottom: 0;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: .5rem;
+        padding: 0;
+        margin: 0;
+        opacity: 0;
+        -webkit-transform: translate3d(0, 30px, 0);
+        transform: translate3d(0, 30px, 0);
+
+        span {
+            top:0;
+        }
+    }
+
+    figcaption::before, 
+    figcaption::after, 
+    h3, 
+    p {
+        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+        transition: opacity 0.35s, transform 0.35s;
     }
 }
 
+figure.effect:hover, 
+figure.effect:focus  {
+    img{
+        opacity: 0.7;
+        transform: scale(1.05);
+    }
+
+    figcaption{
+        background: rgba(0,0,0,0.4);
+    }
+
+    h3,
+    p{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    figcaption::after,
+    h3,
+    p{
+        -webkit-transition-delay: 0.15s;
+        transition-delay: 0.15s;
+    }
+}
 
 
 /*
