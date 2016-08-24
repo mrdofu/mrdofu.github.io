@@ -6,19 +6,14 @@
 <!-- load template based on active page -->
 <div class="content-container">
 	<!-- do the ng foreach thing for each project -->
-	<div class="col-sm-6">
+	<div class="col-sm-6" ng-repeat="project in projects">
 		<figure class="effect">
-			<img src="img/homeMap.png"/>
+			<img ng-src="img/{{project.thumbnail}}"/>
 			<figcaption>
-				<h3><span class="ng-binding">Frank</span></h3>
-				<p><span class="ng-binding">Top-down RPG</span></p>
+				<h3><span>{{project.name}}</span></h3>
+				<p><span>{{project.description}}</span></p>
 				<a ng-href="">View more</a>
 			</figcaption>
-		</figure>
-	</div>
-	<div class="col-sm-6">
-		<figure>
-			<img src="img/dronesafe.png">
 		</figure>
 	</div>
 </div>

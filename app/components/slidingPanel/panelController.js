@@ -19,6 +19,11 @@ angular.module('pageslide-directive')
 .controller('PanelController', ['$scope', function($scope){
 	$scope.checked = false;
 
+	$scope.projects = [
+	{name:'Frank', description:'Top-down RPG', thumbnail:'homeMap.png'},
+	{name:'DroneSafe', description:'Glorified weather app', thumbnail:'dronesafe.png'}
+	];
+
 	$scope.showPanel = function(){
 		$scope.checked = true;
 	}
