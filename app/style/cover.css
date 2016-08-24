@@ -178,8 +178,6 @@ body {
 .content {
   padding: 5em 4em;
   overflow: auto; }
-  .content img {
-    max-width: 400px; }
 
 .content-container {
   margin: 0 8%; }
@@ -206,7 +204,8 @@ figure.effect {
   background: #000;
   text-align: center;
   cursor: pointer;
-  margin: 0; }
+  margin: 0;
+  width: 100%; }
   figure.effect img {
     transition: transform 2s ease-in-out;
     position: relative;
