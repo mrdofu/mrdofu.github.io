@@ -20,8 +20,8 @@ angular.module('pageslide-directive')
 	$scope.checked = false;
 
 	$scope.projects = [
-	{name:'Frank', description:'Top-down RPG', thumbnail:'homeMap.png'},
-	{name:'DroneSafe', description:'Glorified weather app', thumbnail:'dronesafe.png'}
+	{name:'Frank', description:'Top-down RPG', thumbnail:'homeMap.png', link:'https://github.com/mrdofu/Frank'},
+	{name:'DroneSafe', description:'Glorified weather app', thumbnail:'dronesafe.png', link:'https://github.com/SDobrik/DroneSafe'}
 	];
 
 	$scope.showPanel = function(){

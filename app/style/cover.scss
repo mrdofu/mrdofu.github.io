@@ -106,10 +106,11 @@ body {
             font-weight: bold;
             color: #fff; /* IE8 proofing */
         }
-        :hover {
+        a:hover {
             background-color:#6d6d6d;
         }
-        :focus {
+        a:focus,
+        a:active {
             background-color: transparent;
             border-bottom: 2px solid;
         }
@@ -350,7 +351,7 @@ figure.effect{
         color: #fff;
         text-transform: uppercase;
         letter-spacing: 5px;
-        font-size: .5rem;
+        font-size: .8rem;
         padding: 0;
         margin: 0;
         opacity: 0;
