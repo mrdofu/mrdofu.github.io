@@ -187,6 +187,12 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
     border: 2px solid white; }
+  .content-container .contact-item img {
+    width: 1.2rem;
+    height: 1.2rem; }
+  .content-container .contact-item a {
+    font-size: 1.2rem;
+    vertical-align: middle; }
 
 .about p {
   font-size: 1.2rem;

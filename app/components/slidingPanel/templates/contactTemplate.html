@@ -6,7 +6,9 @@
 <!-- load template based on active page -->
 <div class="content-container">
 	<!-- another one of those foreach things -->
-	<div class=""><a href="">Resume</a></div>
-	<div class=""><a href="https://www.linkedin.com/in/dchfung">LinkedIn</a></div>
+	<div class="contact-item" ng-repeat="item in contactItems">
+		<img ng-src="img/{{item.icon}}">
+		<a ng-href="{{item.link}}">{{item.name}}</a>
+	</div>
 </div>
 </div>

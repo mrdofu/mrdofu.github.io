@@ -22,12 +22,10 @@
     border: 1px solid #fff;
 }
 
-
 /*
  * Base structure
  */
-
- html {
+html {
     background-color: #1d0032;
     background-size: 100%;
     background-attachment: fixed;
@@ -259,6 +257,18 @@ body {
             padding-top:15px;
             padding-bottom:15px;
             border: 2px solid white;
+        }
+
+        .contact-item {
+            img {
+                width: 1.2rem;
+                height: 1.2rem;
+            }
+
+            a {
+                font-size: 1.2rem;
+                vertical-align: middle;
+            }
         }
     }
 
