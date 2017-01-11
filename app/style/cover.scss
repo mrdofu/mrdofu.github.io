@@ -272,14 +272,24 @@ body {
         }
     }
 
-    .about p {
+.about {
+
+    column-count: 2;
+
+    p {
         font-size:1.2rem;
         text-align: justify;
+        margin-left: 5px;
+        margin-right: 5px;
     }
+}
 
 /*
  * Projects
  */
+
+
+
  figure img{
     width: 100%;
 }
