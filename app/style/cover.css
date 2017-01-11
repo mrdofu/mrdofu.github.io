@@ -194,14 +194,16 @@ body {
     font-size: 1.2rem;
     vertical-align: middle; }
 
-.about {
-  column-count: 2; }
-  .about p {
-    font-size: 1.2rem;
-    text-align: justify;
-    margin-left: 5px;
-    margin-right: 5px; }
+.about p {
+  font-size: 1.2rem;
+  text-align: justify; }
 
+@media (min-width: 720px) {
+  .about {
+    column-count: 2; }
+    .about p {
+      margin-left: 5px;
+      margin-right: 5px; } }
 /*
  * Projects
  */

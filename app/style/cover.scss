@@ -272,15 +272,19 @@ body {
         }
     }
 
-.about {
-
-    column-count: 2;
-
-    p {
+.about p {
         font-size:1.2rem;
         text-align: justify;
-        margin-left: 5px;
-        margin-right: 5px;
+}
+
+@media (min-width:720px) {
+    .about {
+            column-count: 2;
+
+        p {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
     }
 }
 
@@ -288,9 +292,7 @@ body {
  * Projects
  */
 
-
-
- figure img{
+figure img{
     width: 100%;
 }
 
