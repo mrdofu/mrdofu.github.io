@@ -1,19 +1,19 @@
 <div class="template-header">
-	<div class="content-container">
-		<h2>PROJECTS</h2>
-	</div>
+    <div class="content-container">
+        <h2>PROJECTS</h2>
+    </div>
 </div>
 <!-- load template based on active page -->
 <div class="content-container">
-	<!-- do the ng foreach thing for each project -->
-	<div class="col-sm-6" ng-repeat="project in projects">
-		<figure class="effect">
-			<img ng-src="img/{{project.thumbnail}}"/>
-			<figcaption>
-				<h3><span>{{project.name}}</span></h3>
-				<p><span>{{project.description}}</span></p>
-				<a ng-href="{{project.link}}">View more</a>
-			</figcaption>
-		</figure>
-	</div>
+    <!-- do the ng foreach thing for each project -->
+    <div class="col-sm-6" ng-repeat="project in projects">
+        <figure class="effect">
+            <img ng-src="img/{{project.thumbnail}}"/>
+            <figcaption>
+                <h3><span>{{project.name}}</span></h3>
+                <p><span>{{project.description}}</span></p>
+                <a ng-href="{{project.link}}">View more</a>
+            </figcaption>
+        </figure>
+    </div>
 </div>
