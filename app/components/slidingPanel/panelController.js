@@ -30,6 +30,7 @@ angular.module('pageslide-directive')
 
 	$scope.projects = [
 		{name:'PacmanVR', description:'Pacman as a ghost', thumbnail:'pacman.jpg', link:'https://github.com/mrdofu/PacmanVR'},
+		{name:'Teddy Laserhands', description:'Shoot lasers out your hand', thumbnail:'laserhands.jpg', link:'https://github.com/mrdofu/Laserhands'},
 		{name:'Frank', description:'Top-down RPG', thumbnail:'homeMap.png', link:'https://github.com/mrdofu/Frank'},
 		{name:'DroneSafe', description:'Weather Map', thumbnail:'dronesafe.png', link:'https://github.com/SDobrik/DroneSafe'}
 	];

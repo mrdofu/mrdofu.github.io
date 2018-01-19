@@ -6,7 +6,7 @@
 <!-- load template based on active page -->
 <div class="content-container">
     <!-- do the ng foreach thing for each project -->
-    <div class="col-sm-6" ng-repeat="project in projects">
+    <div class="col-sm-6 proj-tile" ng-repeat="project in projects">
         <figure class="effect">
             <img ng-src="img/{{project.thumbnail}}"/>
             <figcaption>
