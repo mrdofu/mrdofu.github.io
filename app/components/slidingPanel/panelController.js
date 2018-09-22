@@ -38,6 +38,6 @@ angular.module('pageslide-directive')
 	$scope.contactItems = [
 		{name:'Resume', icon:'document.png', link:'img/DominicFung.pdf'},
 		{name:'LinkedIn', icon:'linkedin.png', link:'https://www.linkedin.com/in/dchfung'},
-		{name:'E-mail', icon:'email.png', link:'mailto:d_fung@live.ca'}
+		{name:'E-mail', icon:'email.png', link:'mailto:dom.fung.5@gmail.com'}
 	];
 }]);
